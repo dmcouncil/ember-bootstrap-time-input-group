@@ -40,10 +40,14 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "time-input",
+    "input-group"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^5.1.5",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-truth-helpers": "1.2.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

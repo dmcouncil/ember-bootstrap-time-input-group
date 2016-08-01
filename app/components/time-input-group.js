@@ -1,0 +1,1 @@
+export { default } from 'ember-bootstrap-time-input-group/components/time-input-group';
