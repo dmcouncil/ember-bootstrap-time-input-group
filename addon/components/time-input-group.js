@@ -3,7 +3,7 @@ import layout from '../templates/components/time-input-group';
 
 export default Ember.Component.extend({
   layout,
-  classNames: ['time-input-group'],
+  classNames: ['time-input-group', 'form-inline'],
 
   actions: {
     hourInputChanged() {

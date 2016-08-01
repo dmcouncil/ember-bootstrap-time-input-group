@@ -41,8 +41,9 @@
   },
   "keywords": [
     "ember-addon",
-    "time-input",
-    "input-group"
+    "time",
+    "input",
+    "bootstrap"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
