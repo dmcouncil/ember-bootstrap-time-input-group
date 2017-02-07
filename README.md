@@ -44,3 +44,7 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+## About
+
+ember-bootstrap-time-input-group was developed at [District Management Group](https://dmgroupK12.com).
