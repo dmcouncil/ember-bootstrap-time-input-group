@@ -28,7 +28,11 @@ export default Ember.Component.extend({
 
   hour: Ember.computed('value', {
     get() {
-      return this.get('value').getUTCHours();
+      if (this.get('value')) {
+        return this.get('value').getUTCHours();
+      } else {
+        return null;
+      }
     },
     set(key, value, previousValue) {
       if (value !== previousValue) {
