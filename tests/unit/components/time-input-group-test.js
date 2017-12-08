@@ -61,7 +61,7 @@ test('#hour (get)', function(assert) {
 
 test('#hour (get when null) fails gracefully', function(assert) {
   this.component.set('value', null);
-  assert.equal(this.component.get('hour'), null);
+  assert.ok(!!this.component.get('hour'), 'the return value is not null');
 });
 
 test('#hour (set)', function(assert) {
@@ -76,6 +76,11 @@ test('#minute (get)', function(assert) {
 test('#minute (set)', function(assert) {
   this.component.set('minute', 57);
   assert.equal(this.component.get('value').getUTCMinutes(), 57);
+});
+
+test('#minute (get when null) fails gracefully', function(assert) {
+  this.component.set('value', null);
+  assert.ok(!!this.component.get('minute'), 'the return value is not null');
 });
 
 test('#hoursSelectionContent', function(assert) {
