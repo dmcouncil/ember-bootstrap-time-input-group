@@ -16,35 +16,31 @@ This Ember CLI addon provides a component with a time input for forms. It differ
       3
       etc.
 
-Use `ember install ember-bootstrap-time-input-group` to make the component available in your Ember CLI app. To use the component, insert this in your template:
+## Compatibility
 
-    {{time-input-group}}
+* Ember.js v4.8 or above
+* Ember CLI v4.8 or above
+* Node.js v18 or above
 
-This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-bootstrap-time-input-group
+```
 
-## Running
 
-* `ember serve`
-* Visit your app at http://localhost:4200.
+## Usage
 
-## Running Tests
+To use the component, insert this in your template:
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+    <TimeInputGroup @id='my_element_id_base' @value={{my_value}} @minHour={{my_min}} @maxHour={{my_max}} @saveAction={{my_save_action}} /> 
 
-## Building
+## Contributing
 
-* `ember build`
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
-## About
+## License
 
-ember-bootstrap-time-input-group was developed at [District Management Group](https://dmgroupK12.com).
+This project is licensed under the [MIT License](LICENSE.md).

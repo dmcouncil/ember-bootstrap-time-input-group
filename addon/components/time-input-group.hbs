@@ -1,0 +1,19 @@
+<select id={{this.hourElementId}} class="form-control time-input-group-hour" onchange={{action 'hourInputChanged' value='target'}}>
+  {{#each this.hoursSelectionContent as |period|}}
+    <optgroup label={{period.label}}>
+      {{#each period.content as |content|}}
+        <option value="{{content.value}}" selected={{eq content.value this.hour}}>
+          {{content.label}}
+        </option>
+      {{/each}}
+    </optgroup>
+  {{/each}}
+</select>
+<select id={{this.minuteElementId}} class="form-control time-input-group-minute" onchange={{action 'minuteInputChanged' value='target'}}>
+  {{#each this.minutesSelectionContent as |content|}}
+    <option value="{{content.value}}" selected={{eq content.value this.minute}}>
+      {{content.label}}
+    </option>
+  {{/each}}
+</select>
+<span class='time-input-group-meridian'>{{this.meridian}}</span>
