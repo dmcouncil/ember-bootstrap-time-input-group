@@ -1,6 +1,6 @@
 {
   "name": "ember-bootstrap-time-input-group",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component with a time input for forms.",
   "keywords": [
     "ember-addon"

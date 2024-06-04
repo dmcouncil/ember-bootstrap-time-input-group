@@ -34,7 +34,7 @@ ember install ember-bootstrap-time-input-group
 
 To use the component, insert this in your template:
 
-    <TimeInputGroup @id='my_element_id_base' @value={{my_value}} @minHour={{my_min}} @maxHour={{my_max}} @saveAction={{my_save_action}} /> 
+    <TimeInputGroup @baseElementId='my_element_id_base' @value={{my_value}} @minHour={{my_min}} @maxHour={{my_max}} @saveAction={{my_save_action}} /> 
 
 ## Contributing
 

@@ -11,7 +11,7 @@ module('Integration | Component | time-input-group', function (hooks) {
   });
 
   test('it renders', async function (assert) {
-    await render(hbs`<TimeInputGroup @id='time-machine' @value={{this.time}} @minHour={{5}} @maxHour={{20}} />`);
+    await render(hbs`<TimeInputGroup @baseElementId='time-machine' @id='red-herring' @value={{this.time}} @minHour={{5}} @maxHour={{20}} />`);
 
     let hourInput = find('.time-input-group-hour');
     assert.strictEqual(hourInput.id, 'time-machine-hour', 'it has correct id');
@@ -34,7 +34,7 @@ module('Integration | Component | time-input-group', function (hooks) {
   test ('it renders (morning time)', async function (assert) {
     this.time.setUTCHours(0);
 
-    await render(hbs`<TimeInputGroup @id='time-machine' @value={{this.time}} @minHour={{5}} @maxHour={{20}} />`);
+    await render(hbs`<TimeInputGroup @baseElementId='time-machine' @value={{this.time}} @minHour={{5}} @maxHour={{20}} />`);
 
     assert.strictEqual(find('.time-input-group-meridian').textContent, 'am');
   });

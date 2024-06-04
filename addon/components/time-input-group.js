@@ -3,6 +3,7 @@ import Component from '@ember/component';
 
 export default Component.extend({
   classNames: ['time-input-group', 'form-inline'],
+  attributeBindings: ['baseElementId:id'],
 
   actions: {
     hourInputChanged(target) {
@@ -13,12 +14,12 @@ export default Component.extend({
     }
   },
 
-  hourElementId: computed('id', function() {
-    return this.id + '-hour';
+  hourElementId: computed('baseElementId', function() {
+    return this.baseElementId + '-hour';
   }),
 
-  minuteElementId: computed('id', function() {
-    return this.id + '-minute';
+  minuteElementId: computed('baseElementId', function() {
+    return this.baseElementId + '-minute';
   }),
 
   meridian: computed('hour', function() {

@@ -7,7 +7,7 @@ module('Unit | Component | time-input-group', function (hooks) {
   hooks.beforeEach(function() {
     this.component = this.owner.factoryFor('component:time-input-group').create({
       value: new Date(Date.UTC(2015,3,10,12,40,0)),
-      id: 'time-machine'
+      baseElementId: 'time-machine'
     });
   });
 
